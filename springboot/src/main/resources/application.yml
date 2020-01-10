@@ -1,10 +1,12 @@
 spring:
   profiles:
     active: dev
-
   thymeleaf:
     cache: false
     mode: HTML
     encoding: UTF-8
     servlet:
       content-type: text/html
+server:
+  servlet:
+    context-path: /limpid
