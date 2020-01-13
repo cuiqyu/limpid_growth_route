@@ -3,6 +3,7 @@ package com.limpid.eureka_client.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,7 +19,7 @@ public class HelloController {
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping("/world")
+    @RequestMapping(value = "/world", method = RequestMethod.GET)
     public String world() {
         return "hello world, i'm a " + port;
     }
