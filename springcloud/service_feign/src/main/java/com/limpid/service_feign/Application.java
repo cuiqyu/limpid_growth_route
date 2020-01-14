@@ -1,4 +1,4 @@
-package com.limpid.feign;
+package com.limpid.service_feign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

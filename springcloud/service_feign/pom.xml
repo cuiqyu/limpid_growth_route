@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.limpid</groupId>
-    <artifactId>feign</artifactId>
+    <artifactId>service_feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>feign</name>
+    <name>service_feign</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -26,7 +26,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
