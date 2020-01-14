@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cuiqyu/limpid_growth_route/
+          searchPaths: springcloud/config_server/config_repo
+          # 如果连接的仓库是公开的，则此处不需要输入用户名与密码
+          # username: *****
+          # password: *****
+      label: master
+server:
+  port: 8888
