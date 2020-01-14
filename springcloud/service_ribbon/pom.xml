@@ -20,6 +20,12 @@
     </properties>
 
     <dependencies>
+        <!-- 使用hystrix实现断路由操作，避免单台服务器故障造成的连锁反应 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
